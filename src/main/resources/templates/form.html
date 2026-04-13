@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Form</title>
     <link rel="stylesheet" href="/style.css">
@@ -14,16 +14,33 @@
 
         <form action="/simpan" method="post">
 
-            Nama
+            <label>Nama:</label>
             <input type="text" name="nama">
 
-            NIM
+            <label>NIM:</label>
             <input type="text" name="nim">
 
-            Kelas
-            <input type="text" name="kelas">
+            <label>Jenis Kelamin:</label>
 
-            <button type="submit">Simpan</button>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="jenisKelamin" value="Laki-laki">
+                    Laki-laki
+                </label>
+
+                <label>
+                    <input type="radio" name="jenisKelamin" value="Perempuan">
+                    Perempuan
+                </label>
+            </div>
+
+            <br>
+
+            <button type="submit">Submit</button>
+
+            <br><br>
+
+            <a href="/">Kembali ke Home</a>
 
         </form>
 

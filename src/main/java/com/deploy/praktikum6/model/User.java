@@ -4,15 +4,9 @@ public class User {
 
     private String nama;
     private String nim;
-    private String kelas;
+    private String jenisKelamin;
 
     public User() {}
-
-    public User(String nama, String nim, String kelas) {
-        this.nama = nama;
-        this.nim = nim;
-        this.kelas = kelas;
-    }
 
     public String getNama() {
         return nama;
@@ -30,11 +24,11 @@ public class User {
         this.nim = nim;
     }
 
-    public String getKelas() {
-        return kelas;
+    public String getJenisKelamin() {
+        return jenisKelamin;
     }
 
-    public void setKelas(String kelas) {
-        this.kelas = kelas;
+    public void setJenisKelamin(String jenisKelamin) {
+        this.jenisKelamin = jenisKelamin;
     }
 }

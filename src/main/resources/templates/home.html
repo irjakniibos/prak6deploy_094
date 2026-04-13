@@ -9,31 +9,40 @@
 <div class="container">
 
     <div class="card">
-        <h3>MY Website 20230140094</h3>
-        <a href="/form">
-            <button>Tambah Data</button>
-        </a>
-    </div>
 
-    <div class="card">
+        <h3>MY Website 20230140094</h3>
+
+        <p>Selamat datang di aplikasi!</p>
+
+        <a href="/form">+ Input Data Mahasiswa</a>
+
+        <br><br>
+
+        <h4>Data Mahasiswa</h4>
 
         <table>
-
+            <thead>
             <tr>
                 <th>No</th>
                 <th>Nama</th>
                 <th>NIM</th>
-                <th>Kelas</th>
+                <th>Jenis Kelamin</th>
             </tr>
+            </thead>
 
+            <tbody>
             <tr th:each="u,i : ${data}">
                 <td th:text="${i.index+1}"></td>
                 <td th:text="${u.nama}"></td>
                 <td th:text="${u.nim}"></td>
-                <td th:text="${u.kelas}"></td>
+                <td th:text="${u.jenisKelamin}"></td>
             </tr>
-
+            </tbody>
         </table>
+
+        <br>
+
+        <a href="/">Logout</a>
 
     </div>
 
