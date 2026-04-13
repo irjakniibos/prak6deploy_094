@@ -33,4 +33,9 @@ public class UserController {
         return "login";
     }
 
+    @GetMapping("/form")
+    public String form(){
+        return "form";
+    }
+
 }
