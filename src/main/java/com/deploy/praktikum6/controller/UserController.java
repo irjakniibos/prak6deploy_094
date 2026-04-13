@@ -38,4 +38,12 @@ public class UserController {
         return "form";
     }
 
+    @PostMapping("/simpan")
+    public String simpan(User user, Model model){
+
+        dataUser.add(user);
+        model.addAttribute("data", dataUser);
+
+        return "home";
+    }
 }
